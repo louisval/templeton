@@ -1,0 +1,98 @@
+/*everything*/
+
+ul, menu, dir{
+    list-style-type: none;
+}
+
+/*Body*/
+
+body {
+    background-image: url(../img/backgroundhome.jpg);
+   /* background-size: cover;
+    background-attachment: fixed;*/
+}
+
+/*BAND NAME*/
+
+.row.bandname{
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 368px;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+.bandname span{
+    font-size: 300%;
+}
+.row.bandname:hover {
+    transition-property: top, background-image;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    top: 0px;
+    background-image: url(../img/backgroundhomeblack.jpg);
+}
+
+/*LETTRE T*/
+
+div.lettert span{
+    font-size: 850%;
+    position: relative;
+    bottom: 51px;
+}
+div.lettert{
+    color: rgba(252, 245, 4, 1);
+}
+
+div.bandname a{
+    color: rgba(252, 245, 4, 1);
+}
+
+div.bandname a:hover, a:focus{
+    color: rgba(252, 245, 4, 0.5);
+}
+/*MENU*/
+
+div.menubutton{
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    max-width: 100%;
+    font-size: 127%;
+    position: relative;
+    top: 460px;
+
+}
+
+div.menubutton a{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+div.menubutton a:hover, a:focus{
+    color: rgba(255, 255, 255, 1);
+}
+
+/*LOGO*/
+
+div.logo{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+    top: 390px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+div.logo a{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+div.logo a:hover, a:focus{
+    color: rgba(255, 255, 255, 1);
+}

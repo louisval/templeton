@@ -1,0 +1,354 @@
+/*EVERYTHING*/
+
+*.body{
+margin: 0;
+}
+
+ul, menu, dir{
+    list-style-type: none;
+}
+
+
+/*BODY*/
+
+body{
+    background-color: rgb(252, 245, 4);
+    overflow: hidden;
+}
+
+
+/*PARENT*/
+
+#parent{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*HEADER*/
+
+#header{
+    background-color: black;
+    height: 99px;
+    overflow: hidden;
+}
+
+.row.bandname{
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+.bandname span{
+    font-size: 300%;
+}
+
+div.lettert span{
+    font-size: 915%;
+    position: relative;
+    top: -17px;
+    line-height: 1;
+}
+
+div.lettert{
+    color: rgba(252, 245, 4, 1);
+}
+
+
+/*MENU*/
+
+#menu{
+    background-color: black;
+    height: 100px;
+}
+
+
+/*MENU BUTTONS*/
+
+div.menubutton{
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    max-width: 100%;
+    font-size: 127%;
+    position: relative;
+    top: 60px;
+}
+
+div.menubutton a{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+div.menubutton a:hover, a:focus{
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/*MENU LOGOS*/
+
+div.logo{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+    top: -5px;
+}
+
+div.logo img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/*CONTENU*/
+
+h1, h2, h3, h4, h5, h6{
+    color: white;
+}
+
+#contenu{
+    color: white;
+    background-color: black;
+    overflow: auto;
+    height: 500px;
+}
+
+
+/*NEWS*/
+
+.news{
+    margin-top: 100px;
+}
+
+.news span{
+    color: rgb(252, 245, 4);
+}
+
+.news h1{
+    padding-bottom: 30px;
+}
+
+/*SHOWS*/
+
+.shows{
+    margin-top: 100px;
+}
+
+.shows span{
+    color: rgb(252, 245, 4);
+}
+
+.shows h1{
+    padding-bottom: 30px;
+}
+
+.shows li{
+    padding-bottom: 30px;
+}
+
+.shows p{
+    margin-bottom: 2rem;
+}
+
+li.clearing-featured-img{
+    padding-bottom: 20px;
+}
+li.premiershow, li.deuxiemeshow, li.troisiemeshow, li.quatriemeshow{
+    text-align: center;
+}
+
+ul.cafeatomic, ul.funkymunky, ul.esco, ul.casa{
+    display: inline-block;
+}
+
+.clearing-assembled .clearing-container .visible-img{
+    background-color: black;
+}
+
+.clearing-assembled .clearing-container .carousel{
+    background-color: black;
+}
+
+.clearing-caption{
+    color: white;
+    background-color: black;
+}
+
+
+/*AUDIO*/
+
+.audio{
+    margin-top: 100px;
+}
+
+.audio span{
+    color: rgb(252, 245, 4);
+}
+
+.audio h1{
+    padding-bottom: 30px;
+}
+
+/*PLAYERS*/
+
+.audiojs .time em{
+    color: rgb(252, 245, 4);
+}
+
+.audiojs .time{
+    color: rgb(252, 245, 4);
+}
+
+.audiojs .play-pause{
+    border-right: 0;
+}
+
+
+/*NEWS*/
+
+.video{
+    margin-top: 100px;
+}
+
+.video span{
+    color: rgb(252, 245, 4);
+}
+
+.video h1{
+    padding-bottom: 30px;
+}
+
+
+/*PHOTO*/
+
+.photo{
+    margin-top: 100px;
+}
+
+.photo span{
+    color: rgb(252, 245, 4);
+}
+
+.photo h1{
+    padding-bottom: 30px;
+}
+
+li.bandpictures, li.localpictures, li.halloweenpictures{
+    text-align: center;
+}
+
+ul.photosband, ul.photoslocal, ul.photoshalloween{
+    display: inline-block;    color: white;
+}
+
+
+/*LYRICS*/
+
+.lyrics{
+    margin-top: 100px;
+}
+
+p.chorus{
+    color: rgb(252, 245, 4);
+}
+
+.lyrics h1{
+    padding-bottom: 30px;
+}
+
+#lyrics{
+    color: white;
+}
+
+.content p{
+    margin-bottom: 0;
+}
+
+.tabs.vertical{
+    margin-right: 30px;
+}
+
+/*Lyrics Accordeon*/
+
+.accordion .accordion-navigation.active > a, .accordion dd.active > a{
+    background: transparent;
+}
+
+.accordion .accordion-navigation > a, .accordion dd > a{
+    background: rgba(0,0,0,0.5)
+}
+
+.accordion .accordion-navigation > a:hover, .accordion dd > a:hover{
+    background: rgba(0,0,0,0.7)
+}
+.accordion .accordion-navigation > .content.active, .accordion dd > .content.active{
+    background: transparent;
+}
+.accordion .accordion-navigation > a, .accordion dd > a{
+    color: white;
+}
+#lyricsaccordeon{
+    color: white;
+}
+
+a.songtitle{
+    text-transform: uppercase;
+    font-size: 400%;
+}
+
+h6.quote{
+    color: #ffff00;
+}
+
+
+/*COMMENTS*/
+
+.comments{
+    margin-top: 100px;
+}
+
+.comments span{
+    color: rgb(252, 245, 4);
+}
+
+.comments h1{
+    padding-bottom: 30px;
+}
+
+
+/*MAILING LIST*/
+
+.mailinglist{
+    margin-top: 100px;
+}
+
+.mailinglist span{
+    color: rgb(252, 245, 4);
+}
+
+.mailinglist h1{
+    padding-bottom: 30px;
+}
+
+
+/*CONTACTS*/
+
+.contacts{
+    margin-top: 100px;
+}
+
+.contacts span{
+    color: rgb(252, 245, 4);
+}
+
+.contacts h1{
+    padding-bottom: 30px;
+}
+
+a.liens img{
+    height: 100px;
+    width: 100px;
+}
