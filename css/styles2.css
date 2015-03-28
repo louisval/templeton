@@ -49,7 +49,7 @@ body{
 div.lettert span{
     font-size: 915%;
     position: relative;
-    top: -17px;
+    top: -18px;
     line-height: 1;
 }
 
@@ -68,7 +68,7 @@ div.lettert{
 
 /*MENU BUTTONS*/
 
-div.menubutton{
+div.menutextsection{
     color: white;
     font-family: 'Questrial', sans-serif;
     text-align: center;
@@ -78,18 +78,18 @@ div.menubutton{
     top: 60px;
 }
 
-div.menubutton a{
+div.menutextsection a{
     color: rgba(255, 255, 255, 0.5);
 }
 
-div.menubutton a:hover, a:focus{
+div.menutextsection a:hover, a:focus{
     color: rgba(255, 255, 255, 1);
 }
 
 
 /*MENU LOGOS*/
 
-div.logo{
+div.menulogosection{
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
     max-width: 100%;
@@ -97,7 +97,7 @@ div.logo{
     top: -5px;
 }
 
-div.logo img{
+div.menulogosection img{
     width: 30px;
     height: 30px;
 }
@@ -113,44 +113,53 @@ h1, h2, h3, h4, h5, h6{
     color: white;
     background-color: black;
     overflow: auto;
-    height: 500px;
+    height: 0;
+    transition: height 500ms ease-in;
+}
+
+#contenu.actif {
+    height: calc(100vh - 199px);
 }
 
 
 /*NEWS*/
 
-.news{
-    margin-top: 100px;
+.newssection{
+    margin-top: 50px;
 }
 
-.news span{
+.newssection span{
     color: rgb(252, 245, 4);
 }
 
-.news h1{
+.newssection h1{
     padding-bottom: 30px;
 }
 
 /*SHOWS*/
 
-.shows{
-    margin-top: 100px;
+.showssection{
+    margin-top: 50px;
 }
 
-.shows span{
+.showssection span{
     color: rgb(252, 245, 4);
 }
 
-.shows h1{
+.showssection h1{
     padding-bottom: 30px;
 }
 
-.shows li{
+.showssection li{
     padding-bottom: 30px;
 }
 
-.shows p{
-    margin-bottom: 2rem;
+.showssection p{
+    margin-bottom: 0;
+}
+
+p.upcomingshows{
+    margin-bottom: 30px;
 }
 
 li.clearing-featured-img{
@@ -164,6 +173,9 @@ ul.cafeatomic, ul.funkymunky, ul.esco, ul.casa{
     display: inline-block;
 }
 
+.clearing-blackout{
+    background-color: #000000;
+}
 .clearing-assembled .clearing-container .visible-img{
     background-color: black;
 }
@@ -174,23 +186,34 @@ ul.cafeatomic, ul.funkymunky, ul.esco, ul.casa{
 
 .clearing-caption{
     color: white;
-    background-color: black;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 0;
+    font-size: 75%;
 }
 
 
 /*AUDIO*/
 
-.audio{
-    margin-top: 100px;
+.audiosection{
+    margin-top: 50px;
 }
 
-.audio span{
+.audiosection span{
     color: rgb(252, 245, 4);
 }
 
-.audio h1{
+.audiosection h1{
     padding-bottom: 30px;
 }
+
+div.audiosection ul>li{
+    margin-bottom: 30px;
+}
+
+div.player{
+    margin-bottom: 30px;
+}
+
 
 /*PLAYERS*/
 
@@ -207,32 +230,32 @@ ul.cafeatomic, ul.funkymunky, ul.esco, ul.casa{
 }
 
 
-/*NEWS*/
+/*VIDEO*/
 
-.video{
-    margin-top: 100px;
+.videosection{
+    margin-top: 50px;
 }
 
-.video span{
+.videosection span{
     color: rgb(252, 245, 4);
 }
 
-.video h1{
+.videosection h1{
     padding-bottom: 30px;
 }
 
 
 /*PHOTO*/
 
-.photo{
-    margin-top: 100px;
+.photosection{
+    margin-top: 50px;
 }
 
-.photo span{
+.photosection span{
     color: rgb(252, 245, 4);
 }
 
-.photo h1{
+.photosection h1{
     padding-bottom: 30px;
 }
 
@@ -247,19 +270,22 @@ ul.photosband, ul.photoslocal, ul.photoshalloween{
 
 /*LYRICS*/
 
-.lyrics{
-    margin-top: 100px;
+.lyricssection{
+    margin-top: 50px;
 }
 
 p.chorus{
     color: rgb(252, 245, 4);
 }
 
-.lyrics h1{
+.lyricssection span{
+    color: rgb(252, 245, 4);
+}
+.lyricssection h1{
     padding-bottom: 30px;
 }
 
-#lyrics{
+#lyricssection{
     color: white;
 }
 
@@ -306,49 +332,53 @@ h6.quote{
 
 /*COMMENTS*/
 
-.comments{
-    margin-top: 100px;
+.commentssection{
+    margin-top: 50px;
 }
 
-.comments span{
+.commentssection span{
     color: rgb(252, 245, 4);
 }
 
-.comments h1{
+.commentssection h1{
     padding-bottom: 30px;
 }
 
 
 /*MAILING LIST*/
 
-.mailinglist{
-    margin-top: 100px;
+.mailinglistsection{
+    margin-top: 50px;
 }
 
-.mailinglist span{
+.mailinglistsection span{
     color: rgb(252, 245, 4);
 }
 
-.mailinglist h1{
+.mailinglistsection h1{
     padding-bottom: 30px;
 }
 
 
 /*CONTACTS*/
 
-.contacts{
-    margin-top: 100px;
+.contactssection{
+    margin-top: 50px;
 }
 
-.contacts span{
+.contactssection span{
     color: rgb(252, 245, 4);
 }
 
-.contacts h1{
+.contactssection h1{
     padding-bottom: 30px;
 }
 
 a.liens img{
     height: 100px;
     width: 100px;
+}
+
+div.mailinglist p{
+    margin-bottom: 60px;
 }
