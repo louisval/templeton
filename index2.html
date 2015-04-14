@@ -978,7 +978,7 @@
                 <h1>Contacts</h1>
                 <p><span>Follow us</span> for updates and send an email for <span>info</span>/<span>booking</span></p>
 
-                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4 contactlist">
+                <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4 contactlist">
 
                     <li>
                         <a class="liens" target="_blank" href="https://www.facebook.com/templetonmtl"><img src="img/facebooklogo.png" alt="Facebook"/></a>
@@ -1004,31 +1004,30 @@
 
     </div>
 
+    <div id="menusmall" class="show-for-small-only menutextsectionsmall">
+        <div ><a href="#news">News</a></div>
+        <div ><a href="#shows">Shows</a></div>
+        <div ><a href="#audio">Audio</a></div>
+        <div ><a href="#video">Video</a></div>
+        <div ><a href="#photo">Photo</a></div>
+        <div ><a href="#lyrics">Lyrics</a></div>
+        <div ><a href="#comments">Comments</a></div>
+        <div ><a href="#mailinglist">Email List</a></div>
+        <div ><a href="#contacts">Contact Us</a></div>
+    </div>
 
     <div id="menu">
 
-        <div class="row menutextsection">
-            <div class="small-1 columns"><a href="#news">News</a></div>
-            <div class="small-1 columns"><a href="#shows">Shows</a></div>
-            <div class="small-1 columns"><a href="#audio">Audio</a></div>
-            <div class="small-1 columns"><a href="#video">Video</a></div>
-            <div class="small-1 columns"><a href="#photo">Photo</a></div>
-            <div class="small-1 columns"><a href="#lyrics">Lyrics</a></div>
-            <div class="small-1 columns"><a href="#comments">Comments</a></div>
-            <div class="small-1 columns"><a href="#mailinglist">Email List</a></div>
-            <div class="small-1 columns"><a href="#contacts">Contact Us</a></div>
-        </div>
-
-        <div class="row menulogosection">
-            <div class="logoicon small-1 columns"><a href="#news"><img src="img/newslogo.png" alt="News Logo"/></a></div>
-            <div class="logoicon small-1 columns"><a href="#shows"><img src="img/showslogo.png" alt="Shows Logo"/></a></div>
-            <div class="logoicon small-1 columns"><a href="#audio"><img src="img/audiologo.png" alt="Audio Logo"/></a></div>
-            <div class="logoicon small-1 columns"><a href="#video"><img src="img/videologo.png" alt="Video Logo"/></a></div>
-            <div class="logoicon small-1 columns"><a href="#photo"><img src="img/photologo.png" alt="Photo Logo"/></a></div>
-            <div class="logoicon small-1 columns"><a href="#lyrics"><img src="img/lyricslogo.png" alt="Lyrics Logo"/></a></div>
-            <div class="logoicon small-1 columns"><a href="#comments"><img src="img/commentslogo.png" alt="Comments Logo"/></a></div>
-            <div class="logoicon small-1 columns"><a href="#mailinglist"><img src="img/emaillistlogo.png" alt="Email List Logo"/></a></div>
-            <div class="logoicon small-1 columns"><a href="#contacts"><img src="img/contactslogo.png" alt="Contact Us Logo"/></a></div>
+        <div class="row show-for-medium-up menutextsection menulogosection">
+            <div class="small-1 columns"><a href="#news"><img src="img/newslogo.png" alt="News Logo"/><br>News</a></div>
+            <div class="small-1 columns"><a href="#shows"><img src="img/showslogo.png" alt="Shows Logo"/><br>Shows</a></div>
+            <div class="small-1 columns"><a href="#audio"><img src="img/audiologo.png" alt="Audio Logo"/><br>Audio</a></div>
+            <div class="small-1 columns"><a href="#video"><img src="img/videologo.png" alt="Video Logo"/><br>Video</a></div>
+            <div class="small-1 columns"><a href="#photo"><img src="img/photologo.png" alt="Photo Logo"/><br>Photo</a></div>
+            <div class="small-1 columns"><a href="#lyrics"><img src="img/lyricslogo.png" alt="Lyrics Logo"/><br>Lyrics</a></div>
+            <div class="small-1 columns"><a href="#comments"><img src="img/commentslogo.png" alt="Comments Logo"/><br>Comments</a></div>
+            <div class="small-1 columns"><a href="#mailinglist"><img src="img/emaillistlogo.png" alt="Email List Logo"/><br>Email List</a></div>
+            <div class="small-1 columns"><a href="#contacts"><img src="img/contactslogo.png" alt="Contact Us Logo"/><br>Contact Us</a></div>
         </div>
 
     </div>
@@ -1063,19 +1062,39 @@
 </script>
 
 <script>
-    $("#contenu > *").hide();
-    $("#menu a").click(function() {
-        var url = $(this).attr("href");
-        if ( $(url).is(":visible") ) {
-            $(url).hide();
-            $("#contenu").removeClass("actif");
-        }
-        else {
-            $("#contenu > *").hide();
-            $(url).show();
-            $("#contenu").addClass("actif");
-        }
-    });
+    if (Foundation.utils.is_medium_up()) {
+        $("#contenu > *").hide();
+        $("#menu a").click(function() {
+            var url = $(this).attr("href");
+            if ( $(url).is(":visible") ) {
+                $(url).hide();
+                $("#contenu").removeClass("actif");
+            }
+            else {
+                $("#contenu > *").hide();
+                $(url).show();
+                $("#contenu").addClass("actif");
+            }
+        });
+    }
+</script>
+
+<script>
+    if (Foundation.utils.is_small_only()) {
+        $("#contenu > *").hide();
+        $("#menusmall a").click(function() {
+            var url = $(this).attr("href");
+            if ( $(url).is(":visible") ) {
+                $(url).hide();
+                $("#contenu").removeClass("actif");
+            }
+            else {
+                $("#contenu > *").hide();
+                $(url).show();
+                $("#contenu").addClass("actif");
+            }
+        });
+    }
 </script>
 
 </body>

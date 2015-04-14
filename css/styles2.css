@@ -12,10 +12,9 @@ ul, menu, dir{
 /*BODY*/
 
 body{
-    background-color: rgb(252, 245, 4);
     overflow: hidden;
+    background-color: rgb(252, 245, 4);
 }
-
 
 /*PARENT*/
 
@@ -25,12 +24,10 @@ body{
     width: 100%;
 }
 
-
 /*HEADER*/
 
 #header{
     background-color: black;
-    height: 99px;
     overflow: hidden;
 }
 
@@ -43,13 +40,13 @@ body{
 }
 
 .bandname span{
-    font-size: 300%;
+    font-size: 150%;
 }
 
 div.lettert span{
-    font-size: 915%;
+    font-size: 280%;
     position: relative;
-    top: -18px;
+    top: -5px;
     line-height: 1;
 }
 
@@ -60,22 +57,37 @@ div.lettert{
 
 /*MENU*/
 
-#menu{
+#menu, #menusmall{
     background-color: black;
-    height: 100px;
 }
 
+#menusmall{
+    height: 75px;
+}
 
 /*MENU BUTTONS*/
 
-div.menutextsection{
+div.menutextsectionsmall{
     color: white;
     font-family: 'Questrial', sans-serif;
     text-align: center;
-    max-width: 100%;
-    font-size: 127%;
+    /*max-width: 100%;
+    font-size: 110%;
     position: relative;
-    top: 60px;
+    top: 30px;*/
+}
+
+div.menutextsectionsmall div{
+    display: inline-block;
+    margin: 5px;
+}
+
+div.menutextsectionsmall a{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+div.menutextsectionsmall a:hover, a:focus{
+    color: rgba(255, 255, 255, 1);
 }
 
 div.menutextsection a{
@@ -86,7 +98,6 @@ div.menutextsection a:hover, a:focus{
     color: rgba(255, 255, 255, 1);
 }
 
-
 /*MENU LOGOS*/
 
 div.menulogosection{
@@ -94,7 +105,7 @@ div.menulogosection{
     text-align: center;
     max-width: 100%;
     position: relative;
-    top: -5px;
+    top: 30px;
 }
 
 div.menulogosection img{
@@ -112,20 +123,24 @@ h1, h2, h3, h4, h5, h6{
 #contenu{
     color: white;
     background-color: black;
+
+}
+
+#contenu {
     overflow: auto;
     height: 0;
     transition: height 500ms ease-in;
 }
 
 #contenu.actif {
-    height: calc(100vh - 199px);
+    height: calc(100vh - 120px);
 }
 
 
 /*NEWS*/
 
 .newssection{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .newssection span{
@@ -139,7 +154,7 @@ h1, h2, h3, h4, h5, h6{
 /*SHOWS*/
 
 .showssection{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .showssection span{
@@ -195,7 +210,7 @@ ul.cafeatomic, ul.funkymunky, ul.esco, ul.casa{
 /*AUDIO*/
 
 .audiosection{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .audiosection span{
@@ -229,11 +244,20 @@ div.player{
     border-right: 0;
 }
 
+.audiojs .scrubber{
+    width: 0;
+}
+
+.audiojs{
+    width: 155px;
+}
+
+
 
 /*VIDEO*/
 
 .videosection{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .videosection span{
@@ -248,7 +272,7 @@ div.player{
 /*PHOTO*/
 
 .photosection{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .photosection span{
@@ -271,7 +295,7 @@ ul.photosband, ul.photoslocal, ul.photoshalloween{
 /*LYRICS*/
 
 .lyricssection{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 p.chorus{
@@ -333,7 +357,7 @@ h6.quote{
 /*COMMENTS*/
 
 .commentssection{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .commentssection span{
@@ -348,7 +372,7 @@ h6.quote{
 /*MAILING LIST*/
 
 .mailinglistsection{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .mailinglistsection span{
@@ -363,7 +387,7 @@ h6.quote{
 /*CONTACTS*/
 
 .contactssection{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .contactssection span{
@@ -381,4 +405,49 @@ a.liens img{
 
 div.mailinglist p{
     margin-bottom: 60px;
+}
+
+
+/*CSS FOR MEDIUM AND LARGE SIZE SCREEN*/
+
+@media only screen and (min-width: 40.063em) {
+
+    /*HEADER*/
+
+    #header {
+        height: 100px;
+    }
+
+    /*MENU*/
+
+    #menu {
+        height: 100px;
+    }
+
+    .bandname span{
+        font-size: 300%;
+    }
+
+    div.lettert span{
+        font-size: 915%;
+        position: relative;
+        top: -18px;
+        line-height: 1;
+    }
+
+    /*CONTENU*/
+
+    #contenu.actif {
+        height: calc(100vh - 200px);
+    }
+
+    /*PLAYERS*/
+
+    .audiojs .scrubber{
+        width: 280px;
+    }
+
+    .audiojs{
+        width: 460px;
+    }
 }
